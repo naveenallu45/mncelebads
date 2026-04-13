@@ -7,12 +7,17 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 text-center md:text-left">
           {/* Brand Info */}
           <div className="flex flex-col items-center md:items-start">
-            <a href="#" className="font-heading font-bold text-3xl tracking-wider text-white inline-block mb-4">
-              MN<span className="text-[var(--color-gold)]">CELEB</span>ADS
+            <a href="#" className="inline-block mb-4">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src="https://res.cloudinary.com/dhe3ay2ry/image/upload/v1776087586/file_000000005568720bb64218a33d73f0f5_mno74d.png" alt="MN Celeb Ads" className="h-20 md:h-24 w-auto" />
             </a>
-            <p className="text-gray-400 text-sm max-w-xs leading-relaxed">
+            <p className="text-gray-400 text-sm max-w-xs leading-relaxed mb-4">
               Premium celebrity advertising and promotional events across Telugu states. Transforming businesses into trusted brands.
             </p>
+            <div className="text-gray-400 text-sm max-w-xs leading-relaxed text-center md:text-left">
+              <p>Krishna Nagar Road, Opp Pattabhipuram Police Station, Guntur</p>
+              <p className="mt-2 text-[var(--color-gold)] font-medium">Hyderabad &bull; Banglore</p>
+            </div>
           </div>
 
           {/* Quick Links */}

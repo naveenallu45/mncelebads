@@ -1,17 +1,40 @@
+"use client";
+
+import { useState } from 'react';
+
 export default function HeroSection() {
+  const [currentVideo, setCurrentVideo] = useState(0);
+  const videos = [
+    "https://res.cloudinary.com/dhe3ay2ry/video/upload/v1776086922/MN_Ad_3_s0kvuw.mp4",
+    "https://res.cloudinary.com/dhe3ay2ry/video/upload/v1775820032/ananya.nagalla-20250426-0001_iiqnlh.mp4"
+  ];
+
   return (
     <section className="relative pt-32 pb-20 md:pt-48 md:pb-32 overflow-hidden flex items-center min-h-[90vh]">
       {/* Cinematic Background */}
       <div className="absolute inset-0 z-0 bg-[#0B0B0B]">
-        <video
-          autoPlay
-          loop
-          muted
-          playsInline
-          className="absolute inset-0 w-full h-full object-cover opacity-50 z-0"
-        >
-          <source src="https://res.cloudinary.com/dhe3ay2ry/video/upload/v1775820032/ananya.nagalla-20250426-0001_iiqnlh.mp4" type="video/mp4" />
-        </video>
+        <div className="absolute inset-0 z-0 w-full h-full">
+          {videos.map((src, idx) => (
+            <video
+              key={src}
+              src={src}
+              autoPlay={idx === 0}
+              muted
+              playsInline
+              className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-700 z-0 ${currentVideo === idx ? "opacity-50" : "opacity-0"
+                }`}
+              onEnded={(e) => {
+                const nextIdx = (idx + 1) % videos.length;
+                setCurrentVideo(nextIdx);
+                const nextVideoObj = e.currentTarget.parentElement?.children[nextIdx] as HTMLVideoElement;
+                if (nextVideoObj && nextVideoObj.play) {
+                  nextVideoObj.currentTime = 0;
+                  nextVideoObj.play().catch(() => { });
+                }
+              }}
+            />
+          ))}
+        </div>
         <div className="absolute inset-0 bg-gradient-to-b from-[#0B0B0B]/80 via-[#0B0B0B]/50 to-[#0B0B0B] z-10"></div>
         {/* Subtle glowing orbs */}
         <div className="absolute top-1/4 left-1/4 w-[40vw] h-[40vw] bg-[var(--color-gold)]/5 rounded-full blur-[120px] mix-blend-screen z-20"></div>

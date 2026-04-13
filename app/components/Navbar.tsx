@@ -4,8 +4,9 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center">
           <div className="flex items-center">
-            <a href="#" className="font-heading font-bold text-2xl tracking-wider text-white">
-              MN<span className="text-[var(--color-gold)]">CELEB</span>ADS
+            <a href="#" className="flex items-center">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src="https://res.cloudinary.com/dhe3ay2ry/image/upload/v1776087586/file_000000005568720bb64218a33d73f0f5_mno74d.png" alt="MN Celeb Ads" className="h-10 w-auto md:h-12 scale-[1.4] md:scale-[1.6] origin-left" />
             </a>
           </div>
           <div className="hidden md:flex space-x-8">

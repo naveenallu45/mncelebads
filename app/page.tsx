@@ -3,6 +3,8 @@ import HeroSection from "./components/HeroSection";
 import ServicesSection from "./components/ServicesSection";
 import CelebritiesSection from "./components/CelebritiesSection";
 import TrustSection from "./components/TrustSection";
+import HighestSellingSection from "./components/HighestSellingSection";
+import WatchPromotionsSection from "./components/WatchPromotionsSection";
 import EventsSection from "./components/EventsSection";
 import StatsSection from "./components/StatsSection";
 import CTASection from "./components/CTASection";
@@ -16,7 +18,9 @@ export default function Home() {
       <main className="flex-grow">
         <HeroSection />
         <ServicesSection />
+        <HighestSellingSection />
         <CelebritiesSection />
+        <WatchPromotionsSection />
         <TrustSection />
         <EventsSection />
         <StatsSection />
