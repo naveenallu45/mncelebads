@@ -4,18 +4,22 @@ const events = [
     brand: "December Delights Cafe",
     celebrity: "Actress Faria Abdulla",
     description: "Grand opening of the premium cafe with massive crowd gathering and media coverage.",
+    image: "https://res.cloudinary.com/dhe3ay2ry/image/upload/v1776067094/WhatsApp_Image_2026-04-10_at_07.13.45_1_usjdh2.jpg"
   },
   {
     location: "Hyderabad",
     brand: "Sweet Tone Sweet Shop",
     celebrity: "Actress Ananya Nagalla",
     description: "Launch event driving heavy footfall and extensive social media buzz.",
+    image: "https://res.cloudinary.com/dhe3ay2ry/image/upload/v1776067095/WhatsApp_Image_2026-04-10_at_07.13.45_gmkuaf.jpg",
+    imagePosition: "object-[center_25%]" // Slightly down from absolute top so face is visible
   },
   {
     location: "Karimnagar",
     brand: "Dolphin Hospital",
     celebrity: "Actress Mehreen Pirzada",
     description: "Inauguration ceremony adding immense trust and prestige to the institution.",
+    image: "https://res.cloudinary.com/dhe3ay2ry/image/upload/v1776067407/IMG20260325115848_1_ka9g6s.jpg"
   }
 ];
 
@@ -33,12 +37,9 @@ export default function EventsSection() {
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-10">
           {events.map((event, idx) => (
             <div key={idx} className="group bg-black rounded-2xl overflow-hidden border border-white/5 hover:border-[var(--color-gold)]/50 transition-all duration-300">
-              {/* Image Placeholder intended for REAL client images */}
-              <div className="w-full h-64 bg-[#1a1a1a] relative group-hover:bg-[#222] transition-colors flex items-center justify-center">
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent z-10"></div>
-                <span className="text-gray-600 font-heading text-sm uppercase tracking-widest z-0">
-                  Client Image
-                </span>
+              <div className="w-full h-64 bg-[#1a1a1a] relative group-hover:bg-[#222] transition-colors flex items-center justify-center overflow-hidden">
+                <img src={event.image} alt={event.brand} className={`absolute inset-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-transform duration-500 ${event.imagePosition || 'object-center'}`} />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent z-10"></div>
 
                 {/* Overlay Location Badge */}
                 <div className="absolute bottom-4 left-4 z-20 flex items-center bg-[var(--color-gold)] text-black px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider">

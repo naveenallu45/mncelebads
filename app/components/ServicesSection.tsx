@@ -12,7 +12,8 @@ const services = [
       <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-[var(--color-gold)]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
         <path strokeLinecap="round" strokeLinejoin="round" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
       </svg>
-    )
+    ),
+    waLink: "https://wa.me/919618880475?text=Hi%2C%20I%20am%20interested%20in%20Celebrity%20Promotion%20Videos.%20Please%20provide%20more%20details."
   },
   {
     title: "Celebrity Store Visits",
@@ -26,7 +27,8 @@ const services = [
       <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-[var(--color-gold)]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
         <path strokeLinecap="round" strokeLinejoin="round" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
       </svg>
-    )
+    ),
+    waLink: "https://wa.me/919618880475?text=Hi%2C%20I%20am%20interested%20in%20Celebrity%20Store%20Visits.%20Please%20provide%20more%20details."
   },
   {
     title: "Shop Openings & Events",
@@ -40,7 +42,8 @@ const services = [
       <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-[var(--color-gold)]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
         <path strokeLinecap="round" strokeLinejoin="round" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
       </svg>
-    )
+    ),
+    waLink: "https://wa.me/919962228885?text=Hi%2C%20I%20am%20interested%20in%20Shop%20Openings%20%26%20Events.%20Please%20provide%20more%20details."
   },
   {
     title: "Celebrity Wishes",
@@ -53,7 +56,8 @@ const services = [
       <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-[var(--color-gold)]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
         <path strokeLinecap="round" strokeLinejoin="round" d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z" />
       </svg>
-    )
+    ),
+    waLink: "https://wa.me/916302048393?text=Hi%2C%20I%20am%20interested%20in%20Celebrity%20Wishes%20%28Birthday%2FAnniversary%29.%20Please%20provide%20more%20details."
   }
 ];
 
@@ -84,7 +88,7 @@ export default function ServicesSection() {
                 ))}
               </ul>
 
-              <a href="#book" className="mt-auto flex items-center justify-center w-full py-3 px-4 rounded-lg border border-[var(--color-gold)]/50 text-[var(--color-gold)] hover:bg-[var(--color-gold)] hover:text-black font-semibold transition-all group-hover:bg-[var(--color-gold)] group-hover:text-black">
+              <a href={service.waLink} target="_blank" rel="noopener noreferrer" className="mt-auto flex items-center justify-center w-full py-3 px-4 rounded-lg border border-[var(--color-gold)]/50 text-[var(--color-gold)] hover:bg-[var(--color-gold)] hover:text-black font-semibold transition-all group-hover:bg-[var(--color-gold)] group-hover:text-black">
                 Book Now
               </a>
             </div>

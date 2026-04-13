@@ -1,8 +1,6 @@
 import Navbar from "./components/Navbar";
 import HeroSection from "./components/HeroSection";
 import ServicesSection from "./components/ServicesSection";
-import AdditionalServices from "./components/AdditionalServices";
-import IndustriesSection from "./components/IndustriesSection";
 import TrustSection from "./components/TrustSection";
 import EventsSection from "./components/EventsSection";
 import StatsSection from "./components/StatsSection";
@@ -17,8 +15,6 @@ export default function Home() {
       <main className="flex-grow">
         <HeroSection />
         <ServicesSection />
-        <AdditionalServices />
-        <IndustriesSection />
         <TrustSection />
         <EventsSection />
         <StatsSection />
