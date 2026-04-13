@@ -10,6 +10,7 @@ export default function Navbar() {
           </div>
           <div className="hidden md:flex space-x-8">
             <a href="#services" className="text-sm font-medium text-gray-300 hover:text-[var(--color-gold)] transition-colors">Services</a>
+            <a href="#celebrities" className="text-sm font-medium text-gray-300 hover:text-[var(--color-gold)] transition-colors">Our Celebrities</a>
             <a href="#events" className="text-sm font-medium text-gray-300 hover:text-[var(--color-gold)] transition-colors">Events</a>
           </div>
           <div className="flex items-center">
