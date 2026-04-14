@@ -25,13 +25,15 @@ export default function BudgetSection() {
           <div className="relative group rounded-2xl p-[1px] bg-gradient-to-b from-white/10 to-transparent hover:from-[var(--color-gold)]/50 transition-all duration-500">
             <div className="absolute inset-0 bg-[var(--color-gold)]/10 blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
             <div className="relative h-full bg-[#1A1A1A] rounded-2xl p-8 flex flex-col items-center text-center backdrop-blur-sm border border-white/5">
-              <div className="w-16 h-16 rounded-full bg-white/5 flex items-center justify-center mb-6 border border-white/10 group-hover:border-[var(--color-gold)]/30">
-                <span className="text-2xl">🌱</span>
+              <div className="w-16 h-16 rounded-full bg-[var(--color-gold)]/5 flex items-center justify-center mb-6 border border-white/10 group-hover:border-[var(--color-gold)]/30 group-hover:bg-[var(--color-gold)]/10 transition-all duration-300">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-gray-300 group-hover:text-[var(--color-gold)] transition-colors duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                </svg>
               </div>
               <h3 className="text-xl font-bold text-white mb-2">Regular Budget</h3>
               <div className="w-12 h-1 bg-[var(--color-gold)]/30 rounded-full mb-6"></div>
               <div className="text-[var(--color-gold)] font-bold text-2xl tracking-tight">
-                ₹4,750 <span className="text-gray-500 text-lg font-normal">to</span> <br className="md:hidden" />₹14,750/-
+                ₹4,750 <span className="text-gray-500 text-lg font-normal">To</span> <br className="md:hidden" />₹14,750/-
               </div>
             </div>
           </div>
@@ -43,13 +45,15 @@ export default function BudgetSection() {
               <span className="bg-[var(--color-gold)] text-black text-[10px] sm:text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider block whitespace-nowrap shadow-lg">Most Popular 👇</span>
             </div>
             <div className="relative h-full bg-gradient-to-b from-[#221f15] to-[#1A1A1A] rounded-2xl p-8 flex flex-col items-center text-center backdrop-blur-sm">
-              <div className="w-16 h-16 rounded-full bg-[var(--color-gold)]/10 flex items-center justify-center mb-6 border border-[var(--color-gold)]/30">
-                <span className="text-2xl">⭐</span>
+              <div className="w-16 h-16 rounded-full bg-[var(--color-gold)]/10 flex items-center justify-center mb-6 border border-[var(--color-gold)]/50 shadow-[0_0_15px_rgba(212,175,55,0.2)] group-hover:scale-110 transition-transform duration-300">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-[var(--color-gold)]" fill="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
+                </svg>
               </div>
               <h3 className="text-2xl font-bold text-white mb-2">Basic Budget <span className="inline-block md:hidden">👇</span></h3>
               <div className="w-12 h-1 bg-[var(--color-gold)] rounded-full mb-6"></div>
               <div className="text-white font-bold text-3xl tracking-tight">
-                ₹24,750 <span className="text-gray-400 text-xl font-normal">to</span> <br className="md:hidden" />₹39,999
+                ₹24,750 <span className="text-gray-400 text-xl font-normal">To</span> <br className="md:hidden" />₹39,999
               </div>
             </div>
           </div>
@@ -61,13 +65,15 @@ export default function BudgetSection() {
               <div className="absolute -top-4 left-1/2 -translate-x-1/2 z-20 opacity-0 group-hover:opacity-100 transition-opacity">
                 <span className="bg-white/10 text-white border border-white/20 text-[10px] sm:text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider block whitespace-nowrap">Premium 👇</span>
               </div>
-              <div className="w-16 h-16 rounded-full bg-white/5 flex items-center justify-center mb-6 border border-white/10 group-hover:border-[var(--color-gold)]/30">
-                <span className="text-2xl">🚀</span>
+              <div className="w-16 h-16 rounded-full bg-[var(--color-gold)]/5 flex items-center justify-center mb-6 border border-white/10 group-hover:border-[var(--color-gold)]/30 group-hover:bg-[var(--color-gold)]/10 transition-all duration-300">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-white group-hover:text-[var(--color-gold)] transition-colors duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
+                </svg>
               </div>
               <h3 className="text-xl font-bold text-white mb-2">High Budget <span className="inline-block md:hidden">👇</span></h3>
               <div className="w-12 h-1 bg-[var(--color-gold)]/30 rounded-full mb-6"></div>
               <div className="text-[var(--color-gold)] font-bold text-2xl tracking-tight">
-                ₹69,999 <span className="text-gray-500 text-lg font-normal">to</span> <br className="md:hidden" />₹1 Lakh+
+                ₹69,999 <span className="text-gray-500 text-lg font-normal">To</span> <br className="md:hidden" />₹1 Lakh+
               </div>
             </div>
           </div>
