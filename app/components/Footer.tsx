@@ -69,9 +69,14 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-16 pt-8 border-t border-white/5 text-center text-gray-500 text-sm flex flex-col md:flex-row justify-between items-center gap-4">
-          <p>&copy; {new Date().getFullYear()} MN Celebrity Ads. All rights reserved.</p>
-          <div className="flex gap-4">
+        <div className="mt-16 pt-8 border-t border-white/5 text-center text-gray-500 text-sm flex flex-col md:flex-row justify-between items-center gap-4 md:gap-8">
+          <p className="md:w-1/3 md:text-left">&copy; {new Date().getFullYear()} MN Celebrity Ads. All rights reserved.</p>
+          
+          <p className="md:w-1/3 flex items-center justify-center gap-1">
+            Made with <span className="text-red-500 text-base leading-none">❤️</span> by <a href="https://www.staffarc.in" target="_blank" rel="noopener noreferrer" className="text-white hover:text-[var(--color-gold)] transition-colors font-medium tracking-wide">StaffArc</a>
+          </p>
+          
+          <div className="md:w-1/3 flex justify-center md:justify-end gap-4">
             <a href="#" className="hover:text-[var(--color-gold)] transition-colors">Terms & Conditions</a>
             <a href="#" className="hover:text-[var(--color-gold)] transition-colors">Privacy Policy</a>
           </div>

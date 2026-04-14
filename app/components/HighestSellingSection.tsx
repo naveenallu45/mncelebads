@@ -13,7 +13,7 @@ export default function HighestSellingSection() {
             <span className="text-sm font-medium tracking-widest text-[var(--color-gold)] uppercase">Trending Now</span>
           </div>
           <h2 className="text-4xl md:text-5xl font-heading font-bold text-white mb-6">
-            Highest Selling <span className="text-transparent bg-clip-text bg-gradient-to-r from-[var(--color-gold)] to-yellow-200">Promotions</span>
+            Highest Selling Promotions <span className="text-transparent bg-clip-text bg-gradient-to-r from-[var(--color-gold)] to-yellow-200">– Heroine Madhavi Latha</span>
           </h2>
           <p className="max-w-2xl mx-auto text-lg text-gray-400">
             Discover our most successful and highly requested celebrity promotion campaigns.
@@ -29,13 +29,18 @@ export default function HighestSellingSection() {
                     Heroine Madhavi Latha
                   </h3>
                   <p className="text-[var(--color-gold)] font-medium tracking-wide uppercase text-sm">
-                    Exclusive Promotional Campaign Spotlight
+                    Actress • Politician • Sanathanani • Public Speaker • Devotional
                   </p>
                 </div>
                 
-                <p className="text-gray-300 leading-relaxed text-lg">
-                  Boost your brand visibility with one of our top-performing celebrity faces. Guaranteed authentic reach and massive engagement for your business. She is currently our most requested celebrity for brand promotions!
-                </p>
+                <div className="text-gray-300 leading-relaxed text-lg space-y-4">
+                  <p>
+                    <strong className="text-white">Heroine Madhavi Latha</strong> is our lucky charm for business promotions.
+                  </p>
+                  <p>
+                    She has delivered highest revenue-generating campaigns for many business owners and is one of our most trusted and demanded celebrities.
+                  </p>
+                </div>
                 
                 <div className="pt-4 flex flex-col sm:flex-row gap-4">
                   <a href="https://wa.me/919618880475?text=Hi%2C%20I%20am%20interested%20in%20the%20Highest%20Selling%20Promotion%20featuring%20Heroine%20Madhavi%20Latha." target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center space-x-2 text-black bg-gradient-to-r from-[var(--color-gold)] to-yellow-400 hover:from-[var(--color-gold-hover)] hover:to-[var(--color-gold)] transition-all px-8 py-4 rounded-full font-bold shadow-[0_0_15px_rgba(212,175,55,0.4)] hover:shadow-[0_0_25px_rgba(212,175,55,0.6)] hover:-translate-y-1 transform">

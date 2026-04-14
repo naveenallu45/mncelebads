@@ -1,62 +1,48 @@
+import Image from 'next/image';
+
 const services = [
   {
     title: "Celebrity Promotion Videos",
     description: "Short reels with real celebrities",
+    image: "https://res.cloudinary.com/dhe3ay2ry/image/upload/v1776147455/WhatsApp_Image_2026-04-09_at_20.09.43_jq09dx.jpg",
     features: [
       "Indoor shoot (budget-friendly)",
       "₹3,000 – ₹25,000",
       "No Instagram posting",
       "No store visit"
     ],
-    icon: (
-      <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-[var(--color-gold)]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-        <path strokeLinecap="round" strokeLinejoin="round" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
-      </svg>
-    ),
     waLink: "https://wa.me/919618880475?text=Hi%2C%20I%20am%20interested%20in%20Celebrity%20Promotion%20Videos.%20Please%20provide%20more%20details."
   },
   {
     title: "Celebrity Store Visits",
     description: "Celebrity visits your business",
+    image: "https://res.cloudinary.com/dhe3ay2ry/image/upload/v1776147455/WhatsApp_Image_2026-04-14_at_11.31.04_emdmso.jpg",
     features: [
       "Shoot at your location",
       "Starting ₹35,000+",
       "No Instagram posting"
     ],
-    icon: (
-      <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-[var(--color-gold)]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-        <path strokeLinecap="round" strokeLinejoin="round" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
-      </svg>
-    ),
     waLink: "https://wa.me/919618880475?text=Hi%2C%20I%20am%20interested%20in%20Celebrity%20Store%20Visits.%20Please%20provide%20more%20details."
   },
   {
     title: "Shop Openings & Events",
     description: "Celebrity guest coordination",
+    image: "https://res.cloudinary.com/dhe3ay2ry/image/upload/v1776147456/WhatsApp_Image_2026-04-09_at_20.10.06_wkvtdd.jpg",
     features: [
       "Openings, launches, events",
       "Starting ₹75,000+",
       "Transport & stay extra"
     ],
-    icon: (
-      <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-[var(--color-gold)]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-        <path strokeLinecap="round" strokeLinejoin="round" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
-      </svg>
-    ),
     waLink: "https://wa.me/919962228885?text=Hi%2C%20I%20am%20interested%20in%20Shop%20Openings%20%26%20Events.%20Please%20provide%20more%20details."
   },
   {
     title: "Celebrity Wishes",
     description: "Birthday / Anniversary / Congrats",
+    image: "https://res.cloudinary.com/dhe3ay2ry/image/upload/v1776147455/WhatsApp_Image_2026-04-09_at_20.10.53_ljufsn.jpg",
     features: [
       "Delivered within 24 hours",
       "100% real celebrities"
     ],
-    icon: (
-      <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-[var(--color-gold)]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-        <path strokeLinecap="round" strokeLinejoin="round" d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z" />
-      </svg>
-    ),
     waLink: "https://wa.me/916302048393?text=Hi%2C%20I%20am%20interested%20in%20Celebrity%20Wishes%20%28Birthday%2FAnniversary%29.%20Please%20provide%20more%20details."
   }
 ];
@@ -72,25 +58,34 @@ export default function ServicesSection() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {services.map((service, idx) => (
-            <div key={idx} className="group flex flex-col bg-[var(--color-dark-card)] rounded-2xl p-8 border border-white/5 hover:border-[var(--color-gold)]/50 transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_10px_30px_rgba(212,175,55,0.1)]">
-              <div className="w-16 h-16 rounded-full bg-[var(--color-gold)]/10 flex items-center justify-center mb-6 group-hover:bg-[var(--color-gold)]/20 transition-colors">
-                {service.icon}
+            <div key={idx} className="group flex flex-col bg-[var(--color-dark-card)] rounded-2xl overflow-hidden border border-white/5 hover:border-[var(--color-gold)]/50 transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_10px_30px_rgba(212,175,55,0.1)]">
+              <div className="relative w-full aspect-square sm:aspect-[4/5] bg-black/40">
+                <Image
+                  src={service.image}
+                  alt={service.title}
+                  fill
+                  className="object-contain object-top scale-[0.95] group-hover:scale-100 transition-transform duration-700"
+                  unoptimized
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-[var(--color-dark-card)] via-transparent to-transparent pointer-events-none"></div>
               </div>
-              <h3 className="text-xl font-bold text-white mb-2">{service.title}</h3>
-              <p className="text-gray-400 text-sm mb-6 flex-grow">{service.description}</p>
+              <div className="p-8 pt-4 flex flex-col flex-grow">
+                <h3 className="text-xl font-bold text-white mb-2">{service.title}</h3>
+                <p className="text-gray-400 text-sm mb-6 flex-grow">{service.description}</p>
 
-              <ul className="mb-8 space-y-3 flex-grow">
-                {service.features.map((feature, fIdx) => (
-                  <li key={fIdx} className="flex items-start text-sm text-gray-300">
-                    <svg className="w-5 h-5 text-[var(--color-gold)] mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>
-                    {feature}
-                  </li>
-                ))}
-              </ul>
+                <ul className="mb-8 space-y-3 flex-grow">
+                  {service.features.map((feature, fIdx) => (
+                    <li key={fIdx} className="flex items-start text-sm text-gray-300">
+                      <svg className="w-5 h-5 text-[var(--color-gold)] mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>
+                      {feature}
+                    </li>
+                  ))}
+                </ul>
 
-              <a href={service.waLink} target="_blank" rel="noopener noreferrer" className="mt-auto flex items-center justify-center w-full py-3 px-4 rounded-lg border border-[var(--color-gold)]/50 text-[var(--color-gold)] hover:bg-[var(--color-gold)] hover:text-black font-semibold transition-all group-hover:bg-[var(--color-gold)] group-hover:text-black">
-                Book Now
-              </a>
+                <a href={service.waLink} target="_blank" rel="noopener noreferrer" className="mt-auto flex items-center justify-center w-full py-3 px-4 rounded-lg border border-[var(--color-gold)]/50 text-[var(--color-gold)] hover:bg-[var(--color-gold)] hover:text-black font-semibold transition-all group-hover:bg-[var(--color-gold)] group-hover:text-black">
+                  Book Now
+                </a>
+              </div>
             </div>
           ))}
         </div>

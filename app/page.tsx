@@ -4,6 +4,7 @@ import ServicesSection from "./components/ServicesSection";
 import CelebritiesSection from "./components/CelebritiesSection";
 import TrustSection from "./components/TrustSection";
 import HighestSellingSection from "./components/HighestSellingSection";
+import BudgetSection from "./components/BudgetSection";
 import WatchPromotionsSection from "./components/WatchPromotionsSection";
 import EventsSection from "./components/EventsSection";
 import StatsSection from "./components/StatsSection";
@@ -19,6 +20,7 @@ export default function Home() {
         <HeroSection />
         <ServicesSection />
         <HighestSellingSection />
+        <BudgetSection />
         <CelebritiesSection />
         <WatchPromotionsSection />
         <TrustSection />
