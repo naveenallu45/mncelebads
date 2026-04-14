@@ -40,6 +40,23 @@ export default function TrustSection() {
                </div>
           ))}
         </div>
+      <div className="mt-24 max-w-5xl mx-auto px-4 sm:px-0 text-center">
+          <h3 className="text-2xl md:text-3xl lg:text-4xl font-heading font-bold text-white mb-10 leading-relaxed max-w-4xl mx-auto">
+            <span className="bg-clip-text text-transparent bg-gradient-to-r from-[var(--color-gold)] to-yellow-200 drop-shadow-sm">
+              &ldquo;మీ బిజినెస్ కి కూడా సెలబ్రిటీ బ్రాండ్ అంబాసిడర్ ఉండొచ్చు!&rdquo;
+            </span>
+          </h3>
+          <div className="relative w-full rounded-2xl lg:rounded-3xl overflow-hidden shadow-[0_0_40px_rgba(212,175,55,0.15)] border border-[var(--color-gold)]/20 group">
+            <Image
+              src="https://res.cloudinary.com/dhe3ay2ry/image/upload/v1776161419/1776157243660_ccqgqv.png"
+              alt="Celebrity Brand Ambassador"
+              width={1200}
+              height={600}
+              className="w-full h-auto object-cover transform group-hover:scale-[1.02] transition-transform duration-700"
+              unoptimized
+            />
+          </div>
+        </div>
       </div>
     </section>
   );

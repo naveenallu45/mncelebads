@@ -89,6 +89,18 @@ export default function ServicesSection() {
             </div>
           ))}
         </div>
+    <div className="mt-20 max-w-5xl mx-auto px-4 sm:px-0">
+          <div className="relative w-full rounded-2xl lg:rounded-3xl overflow-hidden shadow-[0_0_40px_rgba(212,175,55,0.15)] border border-[var(--color-gold)]/20 group">
+            <Image
+              src="https://res.cloudinary.com/dhe3ay2ry/image/upload/v1776161418/IMG-20260414-WA0110_ivjjvp.jpg"
+              alt="Promotional Services Banner"
+              width={1200}
+              height={600}
+              className="w-full h-auto object-cover transform group-hover:scale-[1.02] transition-transform duration-700"
+              unoptimized
+            />
+          </div>
+        </div>
       </div>
     </section>
   );
